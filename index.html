@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Мы производим запасные части для БДМ. Ремонтируем карданные валы, катки, занимаемся
-     балансировкой роторов измельчителей, проточкой и наплавкой отверстий.">
-    <meta name="keywords" content="апк липецк, компания апк липецк, главная апк липецк, услуги и производство апк липецк">
+    <meta name="description" content="ActiveBox">
+    <meta name="keywords" content="ActiveBox">
     <title>ActiveBox</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700;300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <body>
 
@@ -26,11 +25,13 @@
           <span></span>
         </div>
         <nav class="header-block-item">
-        <a href="" class="header-item-one">Features</a>
-        <a href="" class="header-item-two">Works</a>
-        <a href="" class="header-item-three">Our Team</a>
-        <a href="" class="header-item-four">Testimonials</a>
-        <a href="" class="header-item-five">Download</a>
+          <div class="header-block-item-wrapper">
+        <a href="#features" class="header-item-one scroll">Features</a>
+        <a href="#works" class="header-item-two scroll2">Works</a>
+        <a href="#team" class="header-item-three scroll3">Our Team</a>
+        <a href="#testimonials" class="header-item-four scroll4">Testimonials</a>
+        <a href="#download" class="header-item-five scroll5">Download</a>
+      </div>
         </nav>
         </div>
       </header>
@@ -47,7 +48,7 @@
       </div>
       </div>
 
-      <div class="section-advantages">
+      <div class="section-advantages" id="features">
       <div class="advantages">
         <div class="class">
         <div class="advantages-wrapper">
@@ -116,7 +117,7 @@
       </div>
     </div> <!-- /.section-advantages -->
 
-    <div class="section-works">
+    <div class="section-works" id="works">
       <div class="works-item works-item-one">
         <img src="img/work-1.jpg" alt="">
         <div class="section-works-content">
@@ -182,7 +183,7 @@
       </div>
       </div> <!-- /.section-works -->
 
-      <div class="section-team section-team-item-one">
+      <div class="section-team section-team-item-one" id="team">
         <div class="section-team-wrapper">
         <div class="section-team-item">
           <img src="img/team-1.jpg" alt="">
@@ -262,7 +263,7 @@
   </div>
 </div> <!-- /.section-team -->
 
-  <div class="section-reviews">
+  <div class="section-reviews" id="testimonials">
   <div class="section-reviews-item">
     <div class="section-reviews-img">
       <img src="img/reviews-1.jpg" alt="">
@@ -283,7 +284,7 @@
   </div>
 </div> <!-- /.section-reviews -->
 
-  <div class="section-download">
+  <div class="section-download" id="download">
     <h3 class="section-download-title">
       Are You Ready to Start? Download Now For Free!
     </h3>
@@ -346,5 +347,8 @@
 
     </div> <!-- /.wrapper -->
     <script type="text/javascript" src="header.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="smooth-scroll.js"></script>
+    <script type="text/javascript" src="header_burger.js"></script>
   </body>
   </html>

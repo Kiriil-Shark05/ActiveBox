@@ -1,6 +1,9 @@
 
   let oneBlock = document.querySelector('.block-one');
   let header = document.querySelector('header');
+  let header_block_item = document.querySelector('.header-block-item');
+  let header_burger = document.querySelector('.header_burger');
+
   const animItems = document.querySelectorAll('._anim-items');
 
 
@@ -22,10 +25,12 @@
         if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
           animItem.classList.add('_active')
           header.classList.remove('header-active');
+          header_block_item.classList.remove('header_block_item-active');
         } else {
           if (!animItem.classList.contains('_anim-no-hide')) {
             animItem.classList.remove('_active');
             header.classList.add('header-active');
+            header_block_item.classList.add('header_block_item-active');
           }
 
         }
